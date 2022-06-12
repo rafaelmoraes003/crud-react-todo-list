@@ -1,13 +1,93 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-control:focus, .btn:focus{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: #eae4e4;
+}
+
+header {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.todo-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.todo-container input, .todo-container button {
+  height: 40px;
+}
+
+.todo-container input {
+  width: 500px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.todo-container button {
+  width: 100px;
+  margin-left: 8px;
+}
+
+.todo-container .error-message {
+  height: 25px;
+  margin: 15px 0;
+}
+
+.todo-container p {
+  color: red;
+  text-align: center;
+}
+
+.todos-control {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.todos-control ul {
+  width: 600px;
+  list-style: none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.todos-control ul > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todos-control ul > div > div {
+  margin-right: 10px;
+}
+
+.todos-control ul > div > div i {
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.todos-control ul > div > div i:nth-of-type(1) {
+  color: green;
+}
+
+.todos-control ul > div > div i:nth-of-type(2) {
+  color:  blue;
+}
+
+.todos-control ul > div > div i:nth-of-type(3) {
+  color: rgb(193, 26, 26);
 }
